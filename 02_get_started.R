@@ -15,6 +15,8 @@ my_numbers <- c(1, 2, 3, 1, 3, 5, 25)
 your_numbers <- c(5, 31, 71, 1, 3, 21, 6)
 my_numbers
 ## displays on console 
+#To display on console the my_numbers command needs to follow the command above
+#with no space in between
 
 # Review of functions
 ?mean()

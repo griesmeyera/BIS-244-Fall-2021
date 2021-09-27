@@ -9,6 +9,7 @@
 # Clear out Console and Environment
 rm(list=ls(all=TRUE))
 cat("\014")
+# cat clears console 
 
 # Let's read in the us-counties file from covid-19-data
 
@@ -35,11 +36,12 @@ SNOHOMISH <- filter(COUNTIES, state=="Washington" &
                       county=="Snohomish")
 View(SNOHOMISH)
 
-# Set n to legth of data set
+# Set n to length of data set
 n <- length(SNOHOMISH$date)
 
 # Initialize new variable in data frame
 SNOHOMISH$incr_cases <- 1
+#this made every number in the row equal to 1
 
 View(SNOHOMISH)
 
@@ -48,6 +50,10 @@ View(SNOHOMISH)
 for (i in 2:n) {
   SNOHOMISH$incr_cases[i] <- (SNOHOMISH$cases[i]-SNOHOMISH$cases[i-1]) 
 }
+
+# this equation means cases in the second row - cases in the first row 
+#[] stand for rows
+#{} stand for columns 
 
 View(SNOHOMISH)
 
