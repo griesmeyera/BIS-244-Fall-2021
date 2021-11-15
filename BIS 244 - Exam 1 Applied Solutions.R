@@ -3,7 +3,7 @@ library(tidyverse)
 
 chess <- read_csv("Player_piece_info.zip")
 
-str(chess)
+# str(chess)
 
 
 
